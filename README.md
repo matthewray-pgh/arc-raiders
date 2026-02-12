@@ -1,16 +1,43 @@
-# React + Vite
+# Arc Raiders Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React + Vite web app for browsing Arc Raiders game data, including items, ARCs, events, and quests. Data is provided by the [MetaForge Arc Raiders API](https://metaforge.app/arc-raiders).
 
-Currently, two official plugins are available:
+## Features
+- Browse and filter Arc Raiders items, ARCs, events, and quests
+- Pagination for large item lists
+- Rarity color coding for items
+- Tooltips for item descriptions
+- Attribution footer as required by the API
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Development
 
-## React Compiler
+Install dependencies:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+npm install
+```
 
-## Expanding the ESLint configuration
+Start the dev server:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+npm run dev
+```
+
+## Deployment
+
+This app is deployed using GitHub Pages from the `gh-pages` branch. To deploy:
+
+```
+npm run deploy
+```
+
+Your site will be available at:
+https://matthewray-pgh.github.io/arc-raiders/
+
+### Branches
+- `master`: main development branch
+- `gh-pages`: auto-generated for deployment
+
+## Attribution
+
+Data provided by the [MetaForge Arc Raiders API](https://metaforge.app/arc-raiders). Attribution and a link are required for public use.
