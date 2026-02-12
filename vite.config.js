@@ -16,6 +16,7 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/arc-raiders\/events-schedule/, '/api/arc-raiders/events-schedule'),
       },
+      base: '/arc-raiders/',
     },
   },
 })
